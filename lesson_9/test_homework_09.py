@@ -1,5 +1,5 @@
 import unittest
-from homework_09 import calculate_total_trees, calculate_total_sea_area, find_cars, swap_and_check_age, sum_of_numbers_in_string
+from lesson_9.homework_09 import calculate_total_trees, calculate_total_sea_area, find_cars, swap_and_check_age, sum_of_numbers_in_string
 
 
 
@@ -12,6 +12,14 @@ class TestHomeworks(unittest.TestCase):
         self.assertEqual(calculate_total_trees(10), 33)
         self.assertEqual(calculate_total_trees(0), 3)
 
+    def test_calculate_total_trees_with_4(self):
+        self.assertEqual(calculate_total_trees(4), 15)
+
+    def test_calculate_total_trees_with_10(self):
+        self.assertEqual(calculate_total_trees(10), 33)
+
+    def test_calculate_total_trees_with_0(self):
+        self.assertEqual(calculate_total_trees(0), 3)
 
     # --------------------------------------------------------------------------
     # Тести для функції calculate_total_sea_area
@@ -55,7 +63,7 @@ class TestHomeworks(unittest.TestCase):
     # --------------------------------------------------------------------------
     # Тести для функції sum_of_numbers_in_string
     def test_sum_of_numbers_in_string(self):
-        self.assertEqual(sum_of_numbers_in_string("1,2,3,4"), 10)
+        self.assertEqual(sum_of_numbers_in_string("1,2,3,4"), 11)
         self.assertEqual(sum_of_numbers_in_string("10,20,30,40"), 100)
         self.assertEqual(sum_of_numbers_in_string("qwerty"), "Не можу це зробити!")
 

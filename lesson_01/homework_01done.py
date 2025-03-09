@@ -1,3 +1,5 @@
+import math
+import random
 # task 01 == Виправте синтаксичні помилки
 print("Hello", end = " ")
 print("world!")
@@ -55,7 +57,7 @@ print("Total trees = ", total_trees)
 morning_temp = 5
 after_lunch_temp = morning_temp - 10
 evening_temp = after_lunch_temp + 4
-print("Температур ввечері =", evening_temp) 
+print("Температур ввечері =", evening_temp)
 
 # task 09
 """
@@ -78,6 +80,16 @@ today_kids = today_present_boys + today_present_girls
 first_book = 8
 second_book = first_book + 2
 third _book = (first_book / 2) + (second_book / 2)
-print(first_book, second_book, third_book) 
+print(first_book, second_book, third_book)
 
 #Some changes
+
+
+my_list_of_nums = random.randint(0, 100)
+for x in my_list_of_nums:
+    if x != 69:
+        print(x, 'not the winning number')
+    elif x == 69:
+        print(x, 'grac, you win')
+
+print(my_win num for x in int(list(random.randint)) if x == 96)

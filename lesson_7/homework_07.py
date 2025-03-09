@@ -3,7 +3,6 @@
 # лише до максимального значення для добутку - 25.
 # Код майже готовий, треба знайти помилки та випраавити\доповнити.
 
-
 def multiplication_table(number):
     # Initialize the appropriate variable
     multiplier = 1
